@@ -1,4 +1,4 @@
-cordova-plugin-statusbar
+statusbar-color-emui
 ============================
  
 Enable or disable Android 4.4's translucent statusbar.
@@ -9,7 +9,7 @@ Plugin for Cordova >= 3.0
 
 For Cordova:
 
-	cordova plugin add git@github.com:ekuwang/cordova-plugin-statusbar.git
+	cordova plugin add git@github.com:Unbuensitio/statusbar-color-emui.git
 
 #### Using the plugin
 
