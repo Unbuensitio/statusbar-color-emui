@@ -27,10 +27,9 @@ public class StatusbarTransparent extends CordovaPlugin {
 						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 						window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 						window.setStatusBarColor(color);*/
-						Window window = cordova.getActivity().getWindow();
-						window.clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
-						int color = Color.parseColor(preferences.getString("StatusBarBackgroundColor", "#4CAF50"));
-						window.setStatusBarColor(color);
+						Window window = getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.BLUE);
 					}
 				});
 				callback.success();
