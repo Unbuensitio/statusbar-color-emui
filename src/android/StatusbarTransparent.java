@@ -1,4 +1,4 @@
-package net.ekuwang.cordova.plugin.statusbar;
+package net.unbuensitio.statusbar.color.emui;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -19,7 +19,11 @@ public class StatusbarTransparent extends CordovaPlugin {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
 						cordova.getActivity().getWindow().addFlags(LayoutParams.FLAG_TRANSLUCENT_STATUS);
-						window.setStatusBarColor(Color.parseColor("#4CAF50"));
+						int color = Color.parseColor(preferences.getString("StatusBarBackgroundColor", "#4CAF50"));
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+						window.setStatusBarColor(color);
 					}
 				});
 				callback.success();
