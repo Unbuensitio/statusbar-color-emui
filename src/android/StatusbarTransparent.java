@@ -15,7 +15,7 @@ import android.view.WindowManager;
 public class StatusbarTransparent extends CordovaPlugin {
 
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callback) throws JSONException {
+	public boolean execute(String action, final CordovaArgs args, CallbackContext callback) throws JSONException {
 		// grab the correct methods
 		if(action.equalsIgnoreCase("enable")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
