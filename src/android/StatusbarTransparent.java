@@ -5,6 +5,7 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.apache.cordova.CordovaArgs;
 import org.json.JSONException;
+import org.apache.cordova.LOG;
 
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
