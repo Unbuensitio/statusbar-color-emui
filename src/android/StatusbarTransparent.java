@@ -3,6 +3,7 @@ package net.unbuensitio.statusbar.color.emui;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
+import org.apache.cordova.CordovaArgs;
 import org.json.JSONException;
 
 import android.os.Build.VERSION;
