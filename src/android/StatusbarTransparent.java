@@ -23,15 +23,13 @@ public class StatusbarTransparent extends CordovaPlugin {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
-						//cordova.getActivity().getWindow().addFlags(LayoutParams.FLAG_TRANSLUCENT_STATUS);
-						/*int color = Color.parseColor(preferences.getString("StatusBarBackgroundColor", "#4CAF50"));
+						cordova.getActivity().getWindow().addFlags(LayoutParams.FLAG_TRANSLUCENT_STATUS);
 						Window window = cordova.getActivity().getWindow();
 						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 						window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-						window.setStatusBarColor(color);*/
-						Window window = cordova.getActivity().getWindow();
+						/*Window window = cordova.getActivity().getWindow();
 						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-						window.setStatusBarColor(Color.parseColor("#0093DE"));
+						window.setStatusBarColor(Color.parseColor("#0093DE"));*/
 					}
 				});
 				callback.success();
