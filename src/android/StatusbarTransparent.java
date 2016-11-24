@@ -16,7 +16,7 @@ import android.view.WindowManager;
 public class StatusbarTransparent extends CordovaPlugin {
 
 	@Override
-	public boolean execute(String action, final CordovaArgs args, CallbackContext callback) throws JSONException {
+	public boolean execute(final String action, final CordovaArgs args, final CallbackContext callback) throws JSONException {
 		// grab the correct methods
 		if(action.equalsIgnoreCase("enable")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
@@ -39,18 +39,19 @@ public class StatusbarTransparent extends CordovaPlugin {
 			}
 			return true;
 		} else if(action.equalsIgnoreCase("color")) {
-			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
+					@Override
 					public void run() {
+					    try {
 						Window window = cordova.getActivity().getWindow();
 						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 						window.setStatusBarColor(Color.parseColor(args.getString(0)));
+					    } catch (JSONException ignore) {
+						LOG.e(TAG, "Invalid hexString argument, use f.i. '#777777'");
+					    }
 					}
 				});
 				callback.success();
-			} else {
-				callback.error("not supported");
-			}
 			return true;
 		} else if(action.equalsIgnoreCase("disable")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
