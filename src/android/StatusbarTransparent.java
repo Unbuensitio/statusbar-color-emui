@@ -51,7 +51,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 								LOG.e(TAG, "Invalid hexString argument, use f.i. '#999999'");
 							}
 							catch (Exception ignore) {
-								 LOG.w(TAG, "Method window.setStatusBarColor not found for SDK level " + Build.VERSION.SDK_INT);
+								LOG.e(TAG, "Invalid hexString argument, use f.i. '#999999'");
 							}
 						} catch (JSONException ignore) {
 							LOG.e(TAG, "Invalid hexString argument, use f.i. '#777777'");
