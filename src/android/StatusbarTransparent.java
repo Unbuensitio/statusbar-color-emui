@@ -37,6 +37,20 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
+		} else if(action.equalsIgnoreCase("color")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor(args.getString(0)));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
 		} else if(action.equalsIgnoreCase("disable")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
