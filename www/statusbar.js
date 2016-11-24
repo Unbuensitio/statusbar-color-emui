@@ -13,6 +13,16 @@ StatusbarTransparent.prototype.enable = function (success, fail) {
 };
 
 /*
+* Change color statusbar
+*/
+StatusbarTransparent.prototype.color = function (success, fail, hexString) {
+	if (this.transparentFlag == false) {
+		this.transparentFlag = true;
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', [hexString]);
+	}
+};
+
+/*
 * Disable translucent statusbar
 */
 StatusbarTransparent.prototype.disable = function (success, fail) {
