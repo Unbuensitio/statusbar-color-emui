@@ -45,7 +45,11 @@ public class StatusbarTransparent extends CordovaPlugin {
 							window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 							//window.setStatusBarColor(Color.parseColor(args.getString(0)));
 							String colorPref = args.getString(0);
-							window.getClass().getDeclaredMethod("setStatusBarColor", int.class).invoke(window, Color.parseColor(colorPref));
+							try {
+								window.getClass().getDeclaredMethod("setStatusBarColor", int.class).invoke(window, Color.parseColor(colorPref));
+							} catch (IllegalArgumentException ignore) {
+								LOG.e(TAG, "Invalid hexString argument, use f.i. '#999999'");
+							} 
 						} catch (JSONException ignore) {
 							LOG.e(TAG, "Invalid hexString argument, use f.i. '#777777'");
 						}
