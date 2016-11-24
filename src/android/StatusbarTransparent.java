@@ -15,7 +15,7 @@ import android.view.WindowManager.LayoutParams;
 import android.view.WindowManager;
 
 public class StatusbarTransparent extends CordovaPlugin {
-
+	private static final String TAG = "StatusBar";
 	@Override
 	public boolean execute(final String action, final CordovaArgs args, final CallbackContext callback) throws JSONException {
 		// grab the correct methods
