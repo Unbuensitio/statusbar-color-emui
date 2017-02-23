@@ -37,6 +37,132 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
+		} else if(action.equalsIgnoreCase("ffffff")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#ffffff"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("ffffff")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#ffffff"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("000000")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#000000"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("00796b")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#00796b"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("0093DE")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#0093DE"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("C62F22")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#C62F22"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("F8A724")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#F8A724"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("627a86")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#627a86"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
+		} else if(action.equalsIgnoreCase("4655AA")) {
+			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
+				cordova.getActivity().runOnUiThread( new Runnable() {
+					public void run() {
+						Window window = cordova.getActivity().getWindow();
+						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+						window.setStatusBarColor(Color.parseColor("#4655AA"));
+					}
+				});
+				callback.success();
+			} else {
+				callback.error("not supported");
+			}
+			return true;
 		} else if(action.equalsIgnoreCase("color")) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
