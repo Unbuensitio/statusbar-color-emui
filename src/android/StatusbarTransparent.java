@@ -37,7 +37,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("ffffff")) {
+		} else if(action.equalsIgnoreCase("blanco")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -51,21 +51,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("ffffff")) {
-			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
-				cordova.getActivity().runOnUiThread( new Runnable() {
-					public void run() {
-						Window window = cordova.getActivity().getWindow();
-						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-						window.setStatusBarColor(Color.parseColor("#ffffff"));
-					}
-				});
-				callback.success();
-			} else {
-				callback.error("not supported");
-			}
-			return true;
-		} else if(action.equalsIgnoreCase("000000")) {
+		} else if(action.equalsIgnoreCase("negro")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -79,7 +65,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("00796b")) {
+		} else if(action.equalsIgnoreCase("verde")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -93,7 +79,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("0093DE")) {
+		} else if(action.equalsIgnoreCase("azul")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -107,7 +93,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("C62F22")) {
+		} else if(action.equalsIgnoreCase("rojo")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -121,7 +107,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("F8A724")) {
+		} else if(action.equalsIgnoreCase("amarillo")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -135,7 +121,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("627a86")) {
+		} else if(action.equalsIgnoreCase("gris")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
@@ -149,7 +135,7 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("4655AA")) {
+		} else if(action.equalsIgnoreCase("violeta")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
