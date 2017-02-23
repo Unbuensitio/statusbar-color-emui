@@ -19,14 +19,10 @@ public class StatusbarTransparent extends CordovaPlugin {
 	@Override
 	public boolean execute(final String action, final CordovaArgs args, final CallbackContext callback) throws JSONException {
 		// grab the correct methods
-		if(action.equalsIgnoreCase("enable")) {
+		/*if(action.equalsIgnoreCase("enable")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
-						/*cordova.getActivity().getWindow().addFlags(LayoutParams.FLAG_TRANSLUCENT_STATUS);
-						Window window = cordova.getActivity().getWindow();
-						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-						window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);*/
 						Window window = cordova.getActivity().getWindow();
 						window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 						window.setStatusBarColor(Color.parseColor("#ffffff"));
@@ -37,7 +33,8 @@ public class StatusbarTransparent extends CordovaPlugin {
 				callback.error("not supported");
 			}
 			return true;
-		} else if(action.equalsIgnoreCase("blanco")) {
+		} else*/
+		if(action.equalsIgnoreCase("blanco")) {
 			if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 				cordova.getActivity().runOnUiThread( new Runnable() {
 					public void run() {
