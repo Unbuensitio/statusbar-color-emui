@@ -36,6 +36,12 @@ StatusbarTransparent.prototype.azul = function (success, fail) {
 		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
+StatusbarTransparent.prototype.rosa = function (success, fail) {
+	if (this.transparentFlag == false) {
+		this.transparentFlag = true;
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
+	}
+};
 StatusbarTransparent.prototype.rojo = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
