@@ -15,55 +15,55 @@ StatusbarTransparent.prototype.enable = function (success, fail) {
 StatusbarTransparent.prototype.blanco = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'blanco', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.negro = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'negro', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.verde = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'verde', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.azul = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'azul', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.rosa = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'rosa', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.rojo = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'rojo', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.amarillo = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'amarillo', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.gris = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'gris', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 StatusbarTransparent.prototype.violeta = function (success, fail) {
 	if (this.transparentFlag == false) {
 		this.transparentFlag = true;
-		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'violeta', []);
+		cordova.exec(success ? success : null, fail ? fail : null, 'StatusbarTransparent', 'enable', []);
 	}
 };
 
